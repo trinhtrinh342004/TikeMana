@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="657.0" prefWidth="228.0" styleClass="AdminMenu_background" stylesheets="@../../Styles/Admin/AdminMenu.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <AnchorPane prefHeight="226.0" prefWidth="186.0">
+         <children>
+            <ImageView fitHeight="27.0" fitWidth="33.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../Images/admin/Menu_icon.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="81.0" fitWidth="77.0" layoutX="76.0" layoutY="84.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../Images/admin/Logo_TikeMana.png" />
+               </image>
+            </ImageView>
+            <Line endX="85.0" layoutX="130.0" layoutY="212.0" startX="-122.0" stroke="WHITE" />
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>

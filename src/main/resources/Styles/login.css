@@ -1,0 +1,13 @@
+.login_background {
+    -fx-background-color: linear-gradient(to bottom, rgba(0, 3, 77, 0.9), rgba(255, 255, 255, 1));
+}
+
+.login_table {
+    -fx-background-color:  rgba(255, 255, 255, 0.8);
+    -fx-background-radius:  20px;
+}
+
+.login_button {
+    -fx-background-color:  #00A4BD;
+    -fx-background-radius: 5px;
+}
