@@ -1,28 +1,51 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Button?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.shape.Line?>
 
-
-<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="657.0" prefWidth="228.0" styleClass="AdminMenu_background" stylesheets="@../../Styles/Admin/AdminMenu.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
-   <children>
-      <AnchorPane prefHeight="226.0" prefWidth="186.0">
-         <children>
-            <ImageView fitHeight="27.0" fitWidth="33.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../../Images/admin/Menu_icon.png" />
-               </image>
-            </ImageView>
-            <ImageView fitHeight="81.0" fitWidth="77.0" layoutX="76.0" layoutY="84.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../../Images/admin/Logo_TikeMana.png" />
-               </image>
-            </ImageView>
-            <Line endX="85.0" layoutX="130.0" layoutY="212.0" startX="-122.0" stroke="WHITE" />
-         </children>
-      </AnchorPane>
-   </children>
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="750.0" prefWidth="250.0" stylesheets="@../../Styles/Admin/AdminMenu.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+   <AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="750.0" prefWidth="250.0" styleClass="main_menu_container">
+      <FontAwesomeIconView boundsType="VISUAL" fill="WHITE" glyphName="BARS" size="30" AnchorPane.leftAnchor="11.0" AnchorPane.topAnchor="11.0" />
+      <ImageView fitHeight="88.0" fitWidth="90.0" layoutX="81.0" layoutY="85.0" pickOnBounds="true" preserveRatio="true">
+         <Image url="@../../Images/admin/Logo_TikeMana.png" />
+      </ImageView>
+      <Line endX="89.0" layoutX="141.0" layoutY="203.0" startX="-122.0" stroke="WHITE" />
+      <VBox layoutY="223.0" prefHeight="326.0" prefWidth="250.0" styleClass="menu_container">
+         <Button fx:id="bangdieukhien_btn" graphicTextGap="20.0" mnemonicParsing="false" text="Bảng điều khiển">
+            <graphic>
+               <FontAwesomeIconView fill="WHITE" glyphName="HOME" size="30" />
+            </graphic>
+         </Button>
+         <Button fx:id="trangchu_btn" graphicTextGap="20.0" mnemonicParsing="false" text="Trang chủ">
+            <graphic>
+               <FontAwesomeIconView glyphName="HOME" size="30" />
+            </graphic>
+         </Button>
+         <Button fx:id="tracuu_btn" graphicTextGap="20.0" mnemonicParsing="false" text="Tra cứu">
+            <graphic>
+               <FontAwesomeIconView glyphName="SEARCH" size="30" />
+            </graphic>
+         </Button>
+         <Button fx:id="doanhthu_btn" graphicTextGap="8.0" mnemonicParsing="false" text="Doanh thu">
+            <graphic>
+               <FontAwesomeIconView glyphName="HANDSHAKE_ALT" size="30" />
+            </graphic>
+         </Button>
+         <Button fx:id="suaquydinh_btn" graphicTextGap="20.0" mnemonicParsing="false" text="Sửa quy định">
+            <graphic>
+               <FontAwesomeIconView glyphName="FILE" size="30" />
+            </graphic>
+         </Button>
+      </VBox>
+      <Button fx:id="dangxuat_btn" layoutX="68.0" layoutY="644.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="156.0" styleClass="alt_menu_btn" text="Đăng xuất">
+         <graphic>
+            <FontAwesomeIconView glyphName="EXTERNAL_LINK" size="20" />
+         </graphic>
+      </Button>
+   </AnchorPane>
 </VBox>

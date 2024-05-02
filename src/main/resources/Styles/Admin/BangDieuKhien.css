@@ -1,0 +1,51 @@
+
+
+.bang_dieu_khien {
+    -fx-alignment: baseline-left;
+    -fx-text-fill: #080C53;
+    -fx-font-size: 40;
+    -fx-font-weight: 900;
+}
+
+.nguoi_dung {
+    -fx-background-color: #00A4BD;
+    -fx-padding: 10 10 10 20;
+    -fx-spacing: 20;
+    -fx-background-radius: 5;
+    -fx-text-fill: white;
+}
+
+/* Them nguoi dung */
+
+.vien {
+    -fx-background-radius: 20;
+    -fx-background-color: white;
+ /*   -fx-border-color: #080C53; */
+}
+
+.them_nguoi_dung {
+    -fx-padding: 10 10 10 20;
+    -fx-spacing: 20;
+    -fx-background-color: #080C53;
+    -fx-font-size: 20;
+    -fx-text-fill: white;
+    -fx-font-weight: 700;
+    -fx-background-radius: 20 20 0 0;
+}
+
+.thong_tin {
+    -fx-spacing: 2;
+    -fx-alignment: top_left;
+}
+
+.phan_quyen ,
+.thong_tin Label {
+    -fx-font-weight: bold;
+    -fx-text-fill: #080C53;
+}
+
+.lua_chon {
+    -fx-spacing: 130;
+    -fx-text-fill: #080C53;
+    -fx-text-fill: #080C53;
+}

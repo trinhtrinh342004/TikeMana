@@ -1,13 +1,38 @@
-.login_background {
+
+/* Login containter */
+.login_container {
     -fx-background-color: linear-gradient(to bottom, rgba(0, 3, 77, 0.9), rgba(255, 255, 255, 1));
 }
 
-.login_table {
+
+
+/* Login form styles */
+.login_form_containter {
     -fx-background-color:  rgba(255, 255, 255, 0.8);
     -fx-background-radius:  20px;
+    -fx-opacity: 0.6;
 }
 
-.login_button {
-    -fx-background-color:  #00A4BD;
-    -fx-background-radius: 5px;
+/* Head */
+.login_form_head {
+    -fx-alignment: center;
+    -fx-font-size: 27;
 }
+
+.login_form_head Text {
+    -fx-fill: #080C53;
+    -fx-font-weight: bold;
+}
+
+/* Body */
+.login_form_body {
+    -fx-spacing: 2;
+    -fx-alignment: top_left;
+}
+
+.login_form_body Label {
+    -fx-font-weight: bold;
+}
+
+
+

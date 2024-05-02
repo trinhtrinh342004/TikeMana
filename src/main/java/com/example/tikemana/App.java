@@ -14,10 +14,6 @@ public class App extends Application {
         stage.setScene(scene);
         stage.show();
 
-//        FXMLLoader fxmlLoader1 = new FXMLLoader(getClass().getResource("/Fxml/Admin/Admin.fxml"));
-//        Scene scene1 = new Scene(fxmlLoader1.load());
-//        stage.setScene(scene1);
-//        stage.show();
     }
 
 }
