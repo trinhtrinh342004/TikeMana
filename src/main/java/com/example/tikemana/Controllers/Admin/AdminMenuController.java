@@ -12,7 +12,6 @@ public class AdminMenuController implements Initializable {
     public Button tracuu_btn;
     public Button doanhthu_btn;
     public Button suaquydinh_btn;
-    public Button report_btn;
     public Button dangxuat_btn;
 
     @Override

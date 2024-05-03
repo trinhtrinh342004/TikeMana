@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
@@ -8,43 +9,46 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.shape.Line?>
 
-<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="750.0" prefWidth="250.0" stylesheets="@../../Styles/Admin/AdminMenu.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
-   <AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="750.0" prefWidth="250.0" styleClass="main_menu_container">
-      <FontAwesomeIconView boundsType="VISUAL" fill="WHITE" glyphName="BARS" size="30" AnchorPane.leftAnchor="11.0" AnchorPane.topAnchor="11.0" />
-      <ImageView fitHeight="88.0" fitWidth="90.0" layoutX="81.0" layoutY="85.0" pickOnBounds="true" preserveRatio="true">
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="300.0" stylesheets="@../../Styles/Admin/AdminMenu.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+   <AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="300.0" styleClass="main_menu_container">
+      <FontAwesomeIconView boundsType="VISUAL" fill="WHITE" glyphName="BARS" layoutX="37.0" layoutY="57.0" size="30" AnchorPane.leftAnchor="37.0" AnchorPane.topAnchor="42.714284896850586" />
+      <ImageView fitHeight="79.0" fitWidth="82.0" layoutX="111.0" layoutY="96.0" pickOnBounds="true" preserveRatio="true">
          <Image url="@../../Images/admin/Logo_TikeMana.png" />
       </ImageView>
-      <Line endX="89.0" layoutX="141.0" layoutY="203.0" startX="-122.0" stroke="WHITE" />
-      <VBox layoutY="223.0" prefHeight="326.0" prefWidth="250.0" styleClass="menu_container">
-         <Button fx:id="bangdieukhien_btn" graphicTextGap="20.0" mnemonicParsing="false" text="Bảng điều khiển">
+      <Line endX="140.0" layoutX="141.0" layoutY="203.0" startX="-122.0" stroke="WHITE" />
+      <VBox layoutY="246.0" prefHeight="330.0" prefWidth="300.0" styleClass="menu_container">
+         <Button fx:id="bangdieukhien_btn" graphicTextGap="25.0" mnemonicParsing="false" prefWidth="255.0" text="Bảng điều khiển">
             <graphic>
                <FontAwesomeIconView fill="WHITE" glyphName="HOME" size="30" />
             </graphic>
          </Button>
-         <Button fx:id="trangchu_btn" graphicTextGap="20.0" mnemonicParsing="false" text="Trang chủ">
+         <Button fx:id="trangchu_btn" graphicTextGap="25.0" mnemonicParsing="false" text="Trang chủ">
             <graphic>
                <FontAwesomeIconView glyphName="HOME" size="30" />
             </graphic>
          </Button>
-         <Button fx:id="tracuu_btn" graphicTextGap="20.0" mnemonicParsing="false" text="Tra cứu">
+         <Button fx:id="tracuu_btn" graphicTextGap="25.0" mnemonicParsing="false" text="Tra cứu">
             <graphic>
                <FontAwesomeIconView glyphName="SEARCH" size="30" />
             </graphic>
          </Button>
-         <Button fx:id="doanhthu_btn" graphicTextGap="8.0" mnemonicParsing="false" text="Doanh thu">
+         <Button fx:id="doanhthu_btn" graphicTextGap="13.0" mnemonicParsing="false" text="Doanh thu">
             <graphic>
                <FontAwesomeIconView glyphName="HANDSHAKE_ALT" size="30" />
             </graphic>
+            <VBox.margin>
+               <Insets />
+            </VBox.margin>
          </Button>
-         <Button fx:id="suaquydinh_btn" graphicTextGap="20.0" mnemonicParsing="false" text="Sửa quy định">
+         <Button fx:id="suaquydinh_btn" graphicTextGap="25.0" mnemonicParsing="false" text="Sửa quy định">
             <graphic>
                <FontAwesomeIconView glyphName="FILE" size="30" />
             </graphic>
          </Button>
       </VBox>
-      <Button fx:id="dangxuat_btn" layoutX="68.0" layoutY="644.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="156.0" styleClass="alt_menu_btn" text="Đăng xuất">
+      <Button fx:id="dangxuat_btn" graphicTextGap="25.0" layoutX="30.0" layoutY="718.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="240.0" styleClass="alt_menu_btn" text="Đăng xuất">
          <graphic>
-            <FontAwesomeIconView glyphName="EXTERNAL_LINK" size="20" />
+            <FontAwesomeIconView fill="WHITE" glyphName="EXTERNAL_LINK" size="30" />
          </graphic>
       </Button>
    </AnchorPane>
