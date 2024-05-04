@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import io.github.palexdev.materialfx.controls.MFXButton?>
+<?import io.github.palexdev.materialfx.controls.MFXPasswordField?>
+<?import io.github.palexdev.materialfx.controls.MFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="700.0" stylesheets="@../Styles/login.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.tikemana.Controllers.LoginController">
+   <VBox prefHeight="400.0" prefWidth="700.0" styleClass="login_background" stylesheets="@../Styles/login.css">
+      <ImageView fitHeight="448.0" fitWidth="711.0" pickOnBounds="true" preserveRatio="true" styleClass="login_container">
+         <Image url="@../Images/login/Sign_In.png" />
+      </ImageView>
+   </VBox>
+   <AnchorPane layoutX="426.0" layoutY="15.0" prefHeight="375.0" prefWidth="273.0" styleClass="login_form_containter">
+      <opaqueInsets>
+         <Insets />
+      </opaqueInsets>
+      <ImageView fitHeight="23.0" fitWidth="149.0" layoutX="92.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <Image url="@../Images/login/logo_TikeMana.png" />
+      </ImageView>
+      <VBox layoutY="77.0" prefHeight="32.0" prefWidth="273.0" styleClass="login_form_head">
+         <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Đăng nhập" />
+      </VBox>
+      <VBox layoutX="19.0" layoutY="122.0" prefHeight="49.0" prefWidth="235.0" styleClass="login_form_body">
+         <Label fx:id="ten_tk_lbl" text="Tên tài khoản" />
+         <MFXTextField fx:id="ten_tk_fld" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="200.0" promptText="Nhập tên" styleClass="field" />
+      </VBox>
+      <MFXButton fx:id="dang_nhap_btn" layoutX="92.0" layoutY="257.0" prefHeight="25.0" prefWidth="102.0" text="Đăng nhập" />
+      <Text layoutX="59.0" layoutY="340.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Chưa có tài khoản?" />
+      <Text layoutX="171.0" layoutY="340.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Đăng ký" />
+      <VBox layoutX="19.0" layoutY="188.0" prefHeight="52.0" prefWidth="235.0" styleClass="login_form_body">
+         <Label fx:id="mahatma_lbl" text="Mật khẩu" />
+         <MFXPasswordField fx:id="mahatma_fld" floatMode="DISABLED" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="235.0" promptText="Nhập mật khẩu" showPassword="true" />
+      </VBox>
+   </AnchorPane>
+</AnchorPane>
